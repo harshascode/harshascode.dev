@@ -1,0 +1,232 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.preview.host": "http://localhost:5173/",
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.dashboard.openOnStart": false,
+  "frontMatter.framework.startCommand": "npm run dev",
+  "frontMatter.taxonomy.seoDescriptionField": "excerpt",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "Article",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "default": "{{slug}}"
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Excerpt",
+          "name": "excerpt",
+          "type": "string"
+        },
+        {
+          "title": "Cover Image",
+          "name": "coverImage",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "Cover Image Alt Text",
+          "name": "coverImageAlt",
+          "type": "string"
+        },
+        {
+          "title": "Show Cover Image",
+          "name": "showImage",
+          "type": "boolean",
+          "description": "Whether to actually show the cover image on the page or just use it as a preview for social media links"
+        },
+        {
+          "title": "Social Image",
+          "name": "socialImage",
+          "type": "image",
+          "description": "Image to use when sharing on social media. If not provided, the cover image will be used instead."
+        },
+        {
+          "title": "Publish Date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "updated",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Show Table of Contents",
+          "name": "showToc",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "title": "Is hidden",
+          "name": "hidden",
+          "type": "draft",
+          "default": false
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Company",
+          "name": "company",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Company Slug",
+          "name": "companySlug",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Job Title",
+          "name": "jobTitle",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Timeframe",
+          "name": "timeframe",
+          "type": "string",
+          "description": "e.g. '2019 -> 2020'",
+          "single": true
+        },
+        {
+          "title": "Is Current Job?",
+          "name": "current",
+          "type": "boolean"
+        },
+        {
+          "title": "Location",
+          "name": "location",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Technologies",
+          "name": "technologies",
+          "type": "block",
+          "fieldGroup": [
+            "coloredTag"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Project",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Name",
+          "name": "name",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "Link",
+          "name": "link",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Source Code",
+          "name": "sourceCode",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Blog Post Link",
+          "name": "blogPostLink",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Labels",
+          "name": "labels",
+          "type": "block",
+          "fieldGroup": [
+            "coloredTag"
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "coloredTag",
+      "labelField": "label",
+      "fields": [
+        {
+          "title": "Label",
+          "name": "label",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Color",
+          "name": "color",
+          "type": "choice",
+          "choices": [
+            "primary",
+            "secondary"
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "static/images",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "harshascode.dev",
+      "path": "[[workspace]]"
+    },
+    {
+      "path": "[[workspace]]"
+    }
+  ]
+}
